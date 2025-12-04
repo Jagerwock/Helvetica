@@ -1,323 +1,121 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Helvetica Resources — Oro responsable en Perú</title>
-  <meta name="description" content="Plataforma de cumplimiento y trazabilidad para cadenas responsables de oro en Perú. Enfoque en ASM, debida diligencia y exportación verificada.">
+  <title>Helvetica Resources</title>
+  <meta name="description" content="Compliance-driven platform for responsible mineral supply chains in Peru.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  
-  <script src="scripts.js" defer></script>
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-  <header class="site-header" data-elevate>
-    <div class="container">
-        <a href="#hero" class="brand">
-            <span>HELVETICA RESOURCES</span>
-        </a>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
-            <span></span><span></span><span></span>
-        </button>
-        <nav id="site-menu" class="main-nav" aria-label="Primaria">
-            <a href="#quienes">Quiénes somos</a>
-            <a href="#que-hacemos">Qué hacemos</a>
-            <a href="#sostenibilidad">Sostenibilidad</a>
-            <a href="#cumplimiento">Cumplimiento</a>
-            <a href="#equipo">Equipo</a>
-            <a href="#contacto" class="btn btn-primary">Contacto</a>
-        </nav>
-    </div>
-  </header>
+<header class="site-header" data-elevate>
+  <div class="container">
+    <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+    <nav class="main-nav desktop">
+      <a href="about.html" data-i18n="nav_about">About Us</a>
+      <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+      <a href="team.html" data-i18n="nav_team">Executive Team</a>
+      <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+      <a href="contact.html" class="highlight" data-i18n="nav_contact">Contact Us →</a>
+    </nav>
+  </div>
+</header>
 
-  <div class="nav-backdrop" hidden></div>
+<div class="nav-backdrop" hidden></div>
+<nav class="main-nav mobile" aria-label="Mobile">
+  <a href="about.html" data-i18n="nav_about">About Us</a>
+  <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+  <a href="team.html" data-i18n="nav_team">Executive Team</a>
+  <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+  <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+  <a class="btn" href="contact.html" data-i18n="nav_contact">Contact Us</a>
+  <div class="lang-switch" style="margin-top:8px">
+    <button type="button" data-lang="en" class="active">EN</button>
+    <button type="button" data-lang="es">ES</button>
+  </div>
+</nav>
 
-  <div id="page">
-    <section id="hero" class="hero section">
-    <div class="container grid-2">
-      <div class="hero-copy">
-        <h1>BRIDGING MINES AND MARKETS THROUGH ETHICAL SOURCING AND TRANSPARENT TRADE.</h1>
-        <p class="kicker">RESPONSIBLE GOLD. REAL IMPACT.</p>
-        <div class="cta-row">
-          <a href="#quienes" class="btn btn-primary">Conoce la plataforma</a>
-          <a href="#contacto" class="btn btn-outline">Invertir en Perú</a>
-        </div>
-        <ul class="trust-badges">
-          <li>Integridad</li>
-          <li>Confidencialidad</li>
-          <li>Cumplimiento</li>
-        </ul>
-      </div>
-      <div class="hero-art">
-        <div class="hero-card">
-            <img class="hero-photo" src="Images/PepitaDeOro.jpg" alt="Lingotes de oro responsables en Perú">
-            <strong>Oro responsable • Perú</strong>
-            <span>Cadena totalmente asegurada y trazable</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<main>
+  <section class="hero">
+  <div class="hero-bg">
+    <img src="Images/Peru1.webp" alt="Mining landscape Peru">
+  </div>
+  <div class="container hero-content">
+    <h1>Transforming mineral supply chains with integrity.</h1>
+    <p>We ensure sustainable supply chains through rigorous due diligence and ethical business practices.</p>
+    <a href="contact.html" class="btn btn-cta">Invest With Us →</a>
+  </div>
+</section>
 
-  <section id="quienes" class="section">
+  <section class="section">
     <div class="container">
       <div class="section-head center">
-        <h2>Quiénes somos</h2>
-        <p class="section-tag">Independent commodity firm specialized in creating value across the gold supply chain.</p>
+        <h2 data-i18n="tiles_title">Our Purpose & Mission</h2>
+        <p class="section-tag" data-i18n="tiles_tag">
+          We work to strengthen responsible mineral supply chains by promoting ethical sourcing, transparent practices, and full compliance with international standards.
+        </p>
       </div>
 
-      <div class="grid-2 feature-cards eqh">
-        <article class="card">
-          <h3>Nuestra razón de ser</h3>
-          <ul class="bullet">
-            <li>Operates an integrated physical trading and mining finance platform connecting mines to global buyers.</li>
-            <li>Focused on responsible investment in artisanal and small-scale mining (ASM).</li>
-            <li>Generates stable, transparent returns through fully insured and traceable operations.</li>
-            <li>Committed to OECD-aligned compliance, due diligence, and local development impact.</li>
-          </ul>
+      <div class="grid-3">
+        <article class="card img">
+          <img src="Images/tile-sourcing.jpg" alt="">
+          <div class="overlay">
+            <h3 data-i18n="tile1_h">Sourcing</h3>
+            <p data-i18n="tile1_p">We identify responsible sources of minerals and materials.</p>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Who we are</h3>
-          <p>Helvetica Commodities is a Compliance-Driven Platform for Responsible Precious-Metals Supply Chains.</p>
-          <p>Helvetica Resources is an independent commodity firm operating at the intersection of responsible mineral sourcing, due diligence, and export compliance. We work with artisanal and small-scale mining (ASM) communities to integrate their production into fully legal, traceable, and OECD-aligned supply chains.</p>
-          <ul class="bullet">
-            <li>Ensure the lawful origin of precious metals</li>
-            <li>Strengthen transparency and documentation</li>
-            <li>Support ASM formalisation and regulatory integration</li>
-            <li>Implement AML/CFT controls consistent with international standards</li>
-            <li>Facilitate secure, verified export pathways</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="que-hacemos" class="section alt">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Qué hacemos</h2>
-        <p class="section-tag">Ensuring Compliance, Traceability & Ethical Sourcing.</p>
-      </div>
-
-      <div class="grid-3 feature-cards eqh">
-        <article class="card">
-          <h3>Our Trade Model</h3>
-          <ol class="num">
-            <li><strong>SOURCING:</strong> Purchase from verified small-scale producers.</li>
-            <li><strong>VALIDATION:</strong> Compliance due diligence; Fire assay & paperwork verification.</li>
-            <li><strong>LOGISTICS:</strong> Efficient, secured, and insured transport to refinery.</li>
-            <li><strong>REFINING:</strong> Processing and quality control by accredited facilities.</li>
-            <li><strong>DELIVERY:</strong> Responsible sale to authorized end-users with full traceability.</li>
-          </ol>
-          <p class="meta">Transaction cycle: 6–8 working days • Fully insured and traceable • Aligned with OECD Responsible Supply Chain Standards.</p>
+        <article class="card img">
+          <img src="Images/tile-compliance.jpg" alt="">
+          <div class="overlay">
+            <h3 data-i18n="tile2_h">Compliance</h3>
+            <p data-i18n="tile2_p">We ensure compliance with international standards and regulations.</p>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Core Functions</h3>
-          <ul class="bullet">
-            <li><strong>Responsible Sourcing & Verification:</strong> Legal titles, KYS, on-site checks, fire assay, third-party provenance.</li>
-            <li><strong>Due Diligence & Risk Management:</strong> OECD 5-step, AML/CFT, audits, continuous monitoring.</li>
-            <li><strong>Secure, Insured Logistics:</strong> Transporte blindado, chain-of-custody, aduanas, seguro.</li>
-            <li><strong>Refining & Responsible Offtake:</strong> Refinadores acreditados, venta a end-users autorizados, audit trail.</li>
-          </ul>
-        </article>
-
-        <article class="card emphasis">
-          <h3>Enfoque en Perú (Tacna & macro-sur)</h3>
-          <p>Plataforma para integrar producción ASM de manera legal y trazable en mercados internacionales; alineada a estándares internacionales y a la regulación local.</p>
-          <ul class="checks">
-            <li>Operación asegurada y documentada</li>
-            <li>Trazabilidad de extremo a extremo</li>
-            <li>Ruta de exportación verificada</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="galeria" class="section">
-    <div class="container">
-        <div class="section-head center">
-            <h2>Perú: Oro y Territorio</h2>
-            <p class="section-tag">Tacna • Cusco — Paisajes y mineral</p>
-        </div>
-
-        <div class="gallery">
-            <figure class="shot gold">
-                <img src="Images/VenasDeOro.jpg" alt="Textura y vetas de oro">
-            </figure>
-            <figure class="shot cusco">
-                <img src="Images/Sacsayhuaman.jpg" alt="Sacsayhuamán, Cusco">
-            </figure>
-            <figure class="shot gold">
-                <img src="Images/OroAbstracto.jpg" alt="Pepita de oro">
-            </figure>
-            <figure class="shot cusco">
-                <img src="Images/ValleSagrado.jpg" alt="Valle Sagrado, Cusco">
-            </figure>
-        </div>
-    </div>
-    </section>
-
-  <section id="sostenibilidad" class="section">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Sostenibilidad y Comercio Responsable</h2>
-        <p class="section-tag">FOSTERING TRANSPARENT AND INTEGRATED SUPPLY CHAINS</p>
-      </div>
-
-      <div class="grid-2 eqh">
-        <article class="card">
-          <h3>Responsible Trade</h3>
-          <ul class="bullet">
-            <li>Follows the OECD Guidelines for Responsible Mineral Supply Chains, integrating ASM producers into legal trade.</li>
-            <li>Risk-based due diligence: identify, assess, and manage risks in sourcing.</li>
-            <li>Promotes formalization: supports ASM communities instead of excluding them.</li>
-            <li>Prevents harmful practices: zero tolerance for forced or child labor and environmental abuse.</li>
-            <li>Supports development: ensures that responsible trade improves local livelihoods.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Our Sustainability Commitments</h3>
-          <ul class="bullet">
-            <li><strong>Human Rights & Labor Standards:</strong> No child labor; No forced or exploitative labor; safe working conditions.</li>
-            <li><strong>Environmental Responsibility:</strong> Oversight of chemical use; improved practices; safer extraction methods.</li>
-            <li><strong>Support for ASM Communities:</strong> Engagement, registro legal y cumplimiento; desarrollo local.</li>
-            <li><strong>Governance & Regulatory Alignment:</strong> OECD-aligned due diligence; LBMA conflict-free; AML/CFT en cada etapa.</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="cumplimiento" class="section alt">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Cumplimiento y Marcos</h2>
-        <p class="section-tag">Integrity, Traceability, and Regulatory Excellence</p>
-      </div>
-
-      <div class="accordion" data-accordion>
-        <details open>
-          <summary>OECD Due Diligence Guidance (5 pasos)</summary>
-          <p>Risk-based process for responsible mineral sourcing and ASM formalisation.</p>
-        </details>
-        <details>
-          <summary>LBMA Responsible Gold Guidance (v9)</summary>
-          <p>Conflict-free sourcing, AML/CFT compliance, supply chain transparency.</p>
-        </details>
-        <details>
-          <summary>SPLAFT (Perú)</summary>
-          <p>Marco legal para detección y reporte de LA/FT ante la UIF. Integrado en nuestros procesos.</p>
-        </details>
-        <details>
-          <summary>Compromisos Operativos</summary>
-          <ul class="bullet">
-            <li>Rigorous due diligence ensuring lawful origin and full traceability</li>
-            <li>Secure, insured logistics verified by authorized partners</li>
-            <li>Responsible sourcing upholding human rights and preventing illicit trade</li>
-            <li>Transparency and integrity embedded across the supply chain</li>
-          </ul>
-        </details>
-        <details>
-          <summary>Equipo de Cumplimiento</summary>
-          <p>Compliance Team: Composed of Gonzalo Campos, Hugo Rivas, and Anais Guzman — experts in mining law, AML/CFT, and regulatory compliance under OECD, LBMA, and SPLAFT frameworks.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="equipo" class="section">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Nuestro equipo</h2>
-        <p class="section-tag">“WE INVEST WHERE WE ARE — BUILDING TRUST, TRANSPARENCY, AND OPPORTUNITY IN EVERY TRANSACTION.”</p>
-      </div>
-
-      <div class="team-grid eqh">
-        <article class="person card">
-          <div class="avatar"></div>
-          <h3>GONZALO CAMPOS</h3>
-          <ul>
-            <li>Member of the Lima Bar Association – Code 58643</li>
-            <li>LL.B. in Law and Political Science, University of Lima</li>
-            <li>Postgraduate degree, UPC</li>
-            <li>Specialized in Mining, Energy, and Infrastructure Law, with expertise in Community Relations, Conflict Resolution, and AML Compliance.</li>
-          </ul>
-        </article>
-
-        <article class="person card">
-          <div class="avatar"></div>
-          <h3>HUGO RIVAS</h3>
-          <ul>
-            <li>Magister in Criminal Law and Criminology, University of San Martín de Porres</li>
-            <li>LL.B. in Law, University of San Martín de Porres</li>
-            <li>Expert in Criminal Compliance, AML/CFT systems, and SPLAFT regulation, with over 20 years of experience advising financial and extractive sector institutions.</li>
-          </ul>
-        </article>
-
-        <article class="person card">
-          <div class="avatar"></div>
-          <h3>ANAIS GUZMAN</h3>
-          <ul>
-            <li>LL.B. in Law, San Juan Bautista Private University</li>
-            <li>Specialized in Economic Criminal Law and Compliance Management, with certified training in AML/CFT (SPLAFT) systems and Compliance Officer responsibilities for metal trading companies.</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="section alt">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Contacto</h2>
-        <p class="section-tag">Cusco • Lima • Perú</p>
-      </div>
-
-      <div class="grid-2 eqh">
-        <article class="card">
-          <h3>Addresses</h3>
-          <ul class="address">
-            <li><strong>Office in Cusco:</strong> Avenida de la Cultura, Urbanización magisterial, N - 15, Cusco</li>
-            <li><strong>Office in Lima:</strong> Av. El Derby 250, piso 12, oficina 1210, Santiago de Surco, Lima</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Escríbenos</h3>
-          <form class="contact-form" netlify>
-            <label>Nombre<input type="text" name="name" required></label>
-            <label>Correo<input type="email" name="email" required></label>
-            <label>Mensaje<textarea name="message" rows="4" required></textarea></label>
-            <button class="btn btn-primary" type="submit">Enviar</button>
-            <p class="disclaimer">Información sujeta a verificación y debida diligencia conforme a estándares internacionales.</p>
-          </form>
-          <div class="contact-meta">
-            <p><strong>Email:</strong> contact@helvetica.com</p>
-            <p><strong>Teléfono:</strong> +1 (555) 555-5555</p>
+        <article class="card img">
+          <img src="Images/tile-transparency.jpg" alt="">
+          <div class="overlay">
+            <h3 data-i18n="tile3_h">Transparency</h3>
+            <p data-i18n="tile3_p">We promote transparency in all aspects of mineral trade.</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container center">
-      <p>© 2025 Helvetica Mineral Resources — Integrity • Confidentiality • Compliance</p>
-      <nav class="footer-nav">
-        <a href="#quienes">About Us</a>
-        <a href="#que-hacemos">Gold Trading</a>
-        <a href="#cumplimiento">Compliance Charter</a>
-        <a href="#contacto">Partnership Opportunities</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </nav>
+  <section class="section alt">
+    <div class="container">
+      <div class="grid-2">
+        <article class="card img">
+          <img src="Images/cusco.jpg" alt="Cusco">
+          <div class="overlay">
+            <h3 data-i18n="offices_title">Visit our offices</h3>
+            <p data-i18n="offices_addr">Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco</p>
+          </div>
+        </article>
+        <article class="card">
+          <p class="kicker" data-i18n="connect_p">Connect with us</p>
+          <h2 style="margin-top:.3rem" data-i18n="connect_h">Join us in shaping the future</h2>
+          <a class="btn" href="contact.html" style="margin-top:10px" data-i18n="connect_btn">Contact Us →</a>
+        </article>
+      </div>
     </div>
-  </footer>
-  </div>
+  </section>
+</main>
 
+<footer class="site-footer">
+  <div class="container center">
+    <p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p>
+    <nav class="footer-nav">
+      <a href="#" data-i18n="foot_priv">Privacy Policy</a>
+      <a href="#" data-i18n="foot_terms">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

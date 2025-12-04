@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — Helvetica Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+<header class="site-header" data-elevate>
+  <div class="container">
+    <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+    <nav class="main-nav desktop">
+      <a href="about.html" data-i18n="nav_about">About Us</a>
+      <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+      <a href="team.html" data-i18n="nav_team">Executive Team</a>
+      <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+      <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+      <a class="btn btn-outline" href="contact.html" data-i18n="nav_contact">Contact Us</a>
+      <span class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></span>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-backdrop" hidden></div>
+<nav class="main-nav mobile">
+  <a href="about.html" data-i18n="nav_about">About Us</a>
+  <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+  <a href="team.html" data-i18n="nav_team">Executive Team</a>
+  <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+  <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+  <a class="btn" href="contact.html" data-i18n="nav_contact">Contact Us</a>
+  <div class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div>
+</nav>
+
+<main>
+  <section class="hero" style="min-height:40vh">
+    <div class="hero-media"><img src="Images/about-hero.jpg" alt=""></div>
+    <div class="container content">
+      <h1>Who we are</h1>
+      <p class="kicker">Independent commodity firm specialized in creating value across the gold supply chain.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <article class="card">
+        <h3>Our mission</h3>
+        <ul>
+          <li>Integrated physical trading & mining finance platform connecting mines to global buyers.</li>
+          <li>Focus on responsible investment in artisanal & small-scale mining (ASM).</li>
+          <li>Stable, transparent returns through insured & traceable operations.</li>
+          <li>OECD-aligned compliance, due diligence and development impact.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Platform pillars</h3>
+        <ul>
+          <li>Lawful origin verification and documentation</li>
+          <li>Transparency and audit trail across the chain-of-custody</li>
+          <li>AML/CFT controls consistent with international standards</li>
+          <li>Secure export pathways & authorized offtake</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container center">
+    <p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p>
+    <nav class="footer-nav">
+      <a href="#" data-i18n="foot_priv">Privacy Policy</a>
+      <a href="#" data-i18n="foot_terms">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
