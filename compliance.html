@@ -11,19 +11,43 @@
   <script defer src="scripts.js"></script>
 </head>
 <body>
-  <header class="site-header" data-elevate><div class="container"><a href="index.html" class="brand">HELVETICA RESOURCES</a><nav class="main-nav desktop"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn btn-outline" href="contact.html" data-i18n="nav_contact">Contact Us</a><span class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></span></nav><button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button></div></header>
-  <div class="nav-backdrop" hidden></div>
-  <nav class="main-nav mobile"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn" href="contact.html" data-i18n="nav_contact">Contact Us</a><div class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div></nav>
+  <header class="site-header" data-elevate>
+    <div class="container">
+      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <nav class="main-nav desktop">
+        <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
+        <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+        <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
+        <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+        <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
+        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="main-nav mobile">
+    <a href="about.html" data-i18n="nav_about">About Us</a>
+    <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+    <a href="team.html" data-i18n="nav_team">Executive Team</a>
+    <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+    <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <div class="lang-switch">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="es">ES</button>
+    </div>
+  </nav>
 
   <main>
     <section class="section">
       <div class="container">
         <div class="section-head center">
-          <h2>Compliance & Frameworks</h2>
+          <h2>Compliance &amp; Frameworks</h2>
           <p class="section-tag">Integrity, traceability, and regulatory excellence.</p>
         </div>
 
-        <div class="grid-2">
+        <div class="grid-2" style="gap:18px 26px">
           <article class="card">
             <h3>OECD Due Diligence (5 steps)</h3>
             <p>Risk-based process for responsible mineral sourcing and ASM formalization.</p>
@@ -38,8 +62,8 @@
           </article>
           <article class="card">
             <h3>Operational Commitments</h3>
-            <ul>
-              <li>Lawful origin & full traceability</li>
+            <ul class="list-tight">
+              <li>Lawful origin &amp; full traceability</li>
               <li>Secure, insured logistics with authorized partners</li>
               <li>Human-rights–aligned responsible sourcing</li>
               <li>Transparency embedded across the supply chain</li>
@@ -54,6 +78,14 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container center"><p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p><nav class="footer-nav"><a href="#" data-i18n="foot_priv">Privacy Policy</a><a href="#" data-i18n="foot_terms">Terms of Service</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="container center">
+      <p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#" data-i18n="foot_priv">Privacy Policy</a>
+        <a href="#" data-i18n="foot_terms">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
