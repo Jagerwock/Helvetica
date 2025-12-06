@@ -11,23 +11,55 @@
   <script defer src="scripts.js"></script>
 </head>
 <body>
-  <header class="site-header" data-elevate><div class="container"><a href="index.html" class="brand">HELVETICA RESOURCES</a><nav class="main-nav desktop"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn btn-outline" href="contact.html" data-i18n="nav_contact">Contact Us</a><span class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></span></nav><button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button></div></header>
+  <header class="site-header" data-elevate>
+    <div class="container">
+      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <nav class="main-nav desktop">
+        <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
+        <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+        <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
+        <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+        <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
+        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
   <div class="nav-backdrop" hidden></div>
-  <nav class="main-nav mobile"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn" href="contact.html" data-i18n="nav_contact">Contact Us</a><div class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div></nav>
+  <nav class="main-nav mobile">
+    <a href="about.html" data-i18n="nav_about">About Us</a>
+    <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+    <a href="team.html" data-i18n="nav_team">Executive Team</a>
+    <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+    <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <div class="lang-switch">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="es">ES</button>
+    </div>
+  </nav>
 
   <main>
+    <section class="hero" style="min-height:44vh">
+      <div class="hero-media"><img src="Images/purpose-hero.jpg" alt=""></div>
+      <div class="container content">
+        <h1>Purpose</h1>
+        <p class="kicker">Value creation is driven through due diligence and active risk management.</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-head center">
           <h2>Our Trade Model</h2>
-          <p class="section-tag">Ensuring Compliance, Traceability & Ethical Sourcing.</p>
+          <p class="section-tag">Ensuring compliance, traceability &amp; ethical sourcing.</p>
         </div>
         <div class="grid-2">
           <article class="card">
-            <ol class="num" style="margin-left:1.25rem">
+            <ol class="list-tight" style="list-style:decimal; margin-left:1.15rem">
               <li><strong>SOURCING:</strong> Purchase from verified small-scale producers.</li>
-              <li><strong>VALIDATION:</strong> Compliance due diligence; fire assay & paperwork verification.</li>
-              <li><strong>LOGISTICS:</strong> Secured & insured transport to refinery.</li>
+              <li><strong>VALIDATION:</strong> Compliance due diligence; fire assay &amp; paperwork verification.</li>
+              <li><strong>LOGISTICS:</strong> Secured &amp; insured transport to refinery.</li>
               <li><strong>REFINING:</strong> Accredited facilities, quality control.</li>
               <li><strong>DELIVERY:</strong> Responsible sale with full traceability.</li>
             </ol>
@@ -35,9 +67,9 @@
           </article>
           <article class="card">
             <h3>Core Functions</h3>
-            <ul>
-              <li><strong>Responsible Sourcing & Verification:</strong> titles, KYS, on-site checks, assays.</li>
-              <li><strong>Due Diligence & Risk Management:</strong> OECD 5-step, AML/CFT, continuous monitoring.</li>
+            <ul class="list-tight">
+              <li><strong>Responsible Sourcing &amp; Verification:</strong> titles, KYS, on-site checks, assays.</li>
+              <li><strong>Due Diligence &amp; Risk Management:</strong> OECD 5-step, AML/CFT, continuous monitoring.</li>
               <li><strong>Secure Logistics:</strong> Armored transport, chain-of-custody, customs, insurance.</li>
               <li><strong>Responsible Offtake:</strong> Accredited refiners, authorized end-users, audit trail.</li>
             </ul>
@@ -47,6 +79,14 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container center"><p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p><nav class="footer-nav"><a href="#" data-i18n="foot_priv">Privacy Policy</a><a href="#" data-i18n="foot_terms">Terms of Service</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="container center">
+      <p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#" data-i18n="foot_priv">Privacy Policy</a>
+        <a href="#" data-i18n="foot_terms">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

@@ -11,19 +11,47 @@
   <script defer src="scripts.js"></script>
 </head>
 <body>
-  <header class="site-header" data-elevate><div class="container"><a href="index.html" class="brand">HELVETICA RESOURCES</a><nav class="main-nav desktop"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn btn-outline" href="contact.html" data-i18n="nav_contact">Contact Us</a><span class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></span></nav><button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button></div></header>
+  <header class="site-header" data-elevate>
+    <div class="container">
+      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <nav class="main-nav desktop">
+        <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
+        <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+        <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
+        <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+        <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
+        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
   <div class="nav-backdrop" hidden></div>
-  <nav class="main-nav mobile"><a href="about.html" data-i18n="nav_about">About Us</a><a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a><a href="team.html" data-i18n="nav_team">Executive Team</a><a href="sustainability.html" data-i18n="nav_sust">Sustainability</a><a href="compliance.html" data-i18n="nav_comp">Compliance</a><a class="btn" href="contact.html" data-i18n="nav_contact">Contact Us</a><div class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div></nav>
+  <nav class="main-nav mobile">
+    <a href="about.html" data-i18n="nav_about">About Us</a>
+    <a href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
+    <a href="team.html" data-i18n="nav_team">Executive Team</a>
+    <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
+    <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
+    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <div class="lang-switch">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="es">ES</button>
+    </div>
+  </nav>
 
   <main>
     <section class="section">
       <div class="container grid-2">
         <article class="card">
-          <h3>Addresses</h3>
-          <ul class="address">
-            <li><strong>Cusco:</strong> Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco</li>
-            <li><strong>Lima:</strong> Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco</li>
-          </ul>
+          <h3>Visit us</h3>
+          <address>
+            <strong>Cusco:</strong> Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco<br>
+            <strong>Lima:</strong> Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco
+          </address>
+          <div class="contact-meta mt-sm">
+            <p><strong>Email:</strong> contact@helvetica.com</p>
+            <p><strong>Phone:</strong> +1 (555) 555-5555</p>
+          </div>
         </article>
         <article class="card">
           <h3>Write to us</h3>
@@ -31,18 +59,22 @@
             <label>Name<input type="text" name="name" required></label>
             <label>Email<input type="email" name="email" required></label>
             <label>Message<textarea name="message" rows="4" required></textarea></label>
-            <button class="btn" type="submit">Send</button>
+            <button class="btn-cta" type="submit">Send →</button>
             <p class="disclaimer">Information subject to verification and due diligence.</p>
           </form>
-          <div class="contact-meta" style="margin-top:10px">
-            <p><strong>Email:</strong> contact@helvetica.com</p>
-            <p><strong>Phone:</strong> +1 (555) 555-5555</p>
-          </div>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container center"><p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p><nav class="footer-nav"><a href="#" data-i18n="foot_priv">Privacy Policy</a><a href="#" data-i18n="foot_terms">Terms of Service</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="container center">
+      <p data-i18n="foot_copy">© 2025 Helvetica Mineral Resources. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#" data-i18n="foot_priv">Privacy Policy</a>
+        <a href="#" data-i18n="foot_terms">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
