@@ -80,6 +80,10 @@ main {
   margin:0 auto 32px; 
 }
 
+.center {
+  text-align:center;
+}
+
 .section-tag { 
   color:var(--muted); 
 }
@@ -441,6 +445,13 @@ body.menu-open .main-nav.mobile {
   padding:32px 0 38px;
 }
 
+.site-footer .container {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+
 .site-footer a { 
   color:var(--gold-soft); 
   text-decoration:none; 
@@ -494,20 +505,103 @@ address {
 }
 
 @media (max-width:1080px){
-  .container { padding:0 28px; }
-  .grid-3, .grid-2 { grid-template-columns:1fr; }
-  .site-header .container { grid-template-columns:auto auto auto; }
+  .container { 
+    padding:0 28px; 
+  }
+
+  .grid-3, .grid-2 { 
+    grid-template-columns:1fr; 
+  }
+
+  .site-header .container { 
+    grid-template-columns:auto auto auto; 
+  }
+
+  .card.img img { 
+    height:320px; 
+  }
 }
 
 @media (max-width:860px){
-  .main-nav.desktop { display:none; }
-  .menu-toggle { display:inline-flex; }
-  main { padding-top:82px; }
-  .hero-content, .hero .content { padding:0 0 12vh; }
-  .hero { min-height:60vh; }
+  .main-nav.desktop { 
+    display:none; 
+  }
+
+  .menu-toggle { 
+    display:inline-flex; 
+  }
+
+  main { 
+    padding-top:82px; 
+  }
+
+  .hero-content, .hero .content { 
+    padding:0 0 12vh; 
+  }
+
+  .hero { 
+    min-height:60vh; 
+  }
+
+  .hero-content { 
+    text-align:center; 
+  }
+
+  .hero-content .btn-cta { 
+    width:100%; 
+    max-width:320px; 
+    margin:0 auto; 
+  }
+
+  .container { 
+    padding:0 22px; 
+  }
+
+  .card { 
+    padding:18px; 
+  }
+
+  .section { 
+    padding:90px 0 72px; 
+  }
+
+  .site-header .container { 
+    gap:18px; 
+    padding:14px 22px; 
+  }
 }
 
 @media (max-width:480px){
-  h1 { font-size:2.2rem; }
-  .btn, .btn-cta { width:100%; text-align:center; }
+  h1 { 
+    font-size:2.2rem; 
+  }
+
+  .btn, .btn-cta { 
+    width:100%; 
+    text-align:center; 
+  }
+
+  .hero { 
+    min-height:52vh; 
+  }
+
+  .hero p { 
+    font-size:1rem; 
+  }
+
+  .container { 
+    padding:0 16px; 
+  }
+
+  .card.img img { 
+    height:260px; 
+  }
+
+  .section { 
+    padding:72px 0 64px; 
+  }
+
+  .site-footer { 
+    padding:28px 0 34px; 
+  }
 }
