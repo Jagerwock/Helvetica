@@ -7,6 +7,7 @@ const backdrop = document.querySelector('.nav-backdrop');
 function setMenu(open){
   document.body.classList.toggle('menu-open', open);
   btn?.classList.toggle('is-open', open);
+  if (backdrop) backdrop.hidden = !open;
 }
 btn?.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
 backdrop?.addEventListener('click', () => setMenu(false));
@@ -256,21 +257,23 @@ function applyLang(lang){
   });
   LANG_BUTTONS.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
   localStorage.setItem('lang', lang);
-}
 
-I18N_HTML.forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    if (dict[key]) el.innerHTML = dict[key];
+  I18N_HTML.forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key]) el.innerHTML = dict[key];
   });
   I18N_PLACEHOLDERS.forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (dict[key]) el.setAttribute('placeholder', dict[key]);
   });
+  LANG_BUTTONS.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang;
+}
 
 applyLang(localStorage.getItem('lang') || 'en');
 
 LANG_BUTTONS.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
-document.documentElement.lang = lang;
 
 window.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
