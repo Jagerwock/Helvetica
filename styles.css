@@ -109,6 +109,16 @@ main {
   font-weight:700;
   font-size:1rem;
   letter-spacing:.08em;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand img {
+  width:240px;
+  height:80px;
+  display:block;
+  filter:drop-shadow(0 6px 12px rgba(0,0,0,0.4));
 }
 
 .main-nav.desktop { 
@@ -248,6 +258,11 @@ body.menu-open .main-nav.mobile {
   display:inline-flex; 
   gap:6px; 
   margin-top:10px; 
+}
+
+.header-lang {
+  margin-top:0;
+  margin-left:14px;
 }
 
 .lang-switch button {
@@ -514,7 +529,7 @@ address {
   }
 
   .site-header .container { 
-    grid-template-columns:auto auto auto; 
+    grid-template-columns:auto 1fr auto; 
   }
 
   .card.img img { 
@@ -525,6 +540,10 @@ address {
 @media (max-width:860px){
   .main-nav.desktop { 
     display:none; 
+  }
+
+  .header-lang {
+    display:none;
   }
 
   .menu-toggle { 

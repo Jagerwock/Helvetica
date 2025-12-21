@@ -13,15 +13,21 @@
 <body>
   <header class="site-header" data-elevate>
     <div class="container">
-      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <a href="index.html" class="brand">
+        <img src="Images/Helvetica_Logo_H_GD.png" alt="Helvetica Resources logo">
+      </a>
       <nav class="main-nav desktop">
         <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
         <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
         <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
         <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
         <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
-        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+        <a class="nav-link contact-link" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> <span class="arrow">→</span></a>
       </nav>
+      <div class="lang-switch header-lang">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -32,7 +38,7 @@
     <a href="team.html" data-i18n="nav_team">Executive Team</a>
     <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
     <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
-    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <a class="btn-cta" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> →</a>
     <div class="lang-switch">
       <button type="button" data-lang="en" class="active">EN</button>
       <button type="button" data-lang="es">ES</button>
@@ -41,37 +47,37 @@
 
   <main>
     <section class="hero" style="min-height:44vh">
-      <div class="hero-media"><img src="Images/purpose-hero.jpg" alt=""></div>
+      <div class="hero-media"><img src="Images/ValleSagrado.jpg" alt=""></div>
       <div class="container content">
-        <h1>Purpose</h1>
-        <p class="kicker">Value creation is driven through due diligence and active risk management.</p>
+        <h1 data-i18n="purpose_title">Our Purpose</h1>
+        <p class="kicker" data-i18n="purpose_tag">Value creation is driven through due diligence and active risk management.</p>
       </div>
     </section>
     
     <section class="section">
       <div class="container">
         <div class="section-head center">
-          <h2>Our Trade Model</h2>
-          <p class="section-tag">Ensuring compliance, traceability &amp; ethical sourcing.</p>
+          <h2 data-i18n="trade_model_title">Our Trade Model</h2>
+          <p class="section-tag" data-i18n="trade_model_tag">Ensuring compliance, traceability &amp; ethical sourcing.</p>
         </div>
         <div class="grid-2">
           <article class="card">
             <ol class="list-tight" style="list-style:decimal; margin-left:1.15rem">
-              <li><strong>SOURCING:</strong> Purchase from verified small-scale producers.</li>
-              <li><strong>VALIDATION:</strong> Compliance due diligence; fire assay &amp; paperwork verification.</li>
-              <li><strong>LOGISTICS:</strong> Secured &amp; insured transport to refinery.</li>
-              <li><strong>REFINING:</strong> Accredited facilities, quality control.</li>
-              <li><strong>DELIVERY:</strong> Responsible sale with full traceability.</li>
+              <li><strong data-i18n="trade_step1_label">SOURCING:</strong> <span data-i18n="trade_step1_desc">Purchase from verified small-scale producers.</span></li>
+              <li><strong data-i18n="trade_step2_label">VALIDATION:</strong> <span data-i18n="trade_step2_desc">Compliance due diligence; fire assay &amp; paperwork verification.</span></li>
+              <li><strong data-i18n="trade_step3_label">LOGISTICS:</strong> <span data-i18n="trade_step3_desc">Secured &amp; insured transport to refinery.</span></li>
+              <li><strong data-i18n="trade_step4_label">REFINING:</strong> <span data-i18n="trade_step4_desc">Accredited facilities, quality control.</span></li>
+              <li><strong data-i18n="trade_step5_label">DELIVERY:</strong> <span data-i18n="trade_step5_desc">Responsible sale with full traceability.</span></li>
             </ol>
-            <p class="kicker">Cycle: 6–8 working days • Fully insured • OECD-aligned.</p>
+            <p class="kicker" data-i18n="trade_cycle">Cycle: 6–8 working days • Fully insured • OECD-aligned.</p>
           </article>
           <article class="card">
-            <h3>Core Functions</h3>
+            <h3 data-i18n="core_title">Core Functions</h3>
             <ul class="list-tight">
-              <li><strong>Responsible Sourcing &amp; Verification:</strong> titles, KYS, on-site checks, assays.</li>
-              <li><strong>Due Diligence &amp; Risk Management:</strong> OECD 5-step, AML/CFT, continuous monitoring.</li>
-              <li><strong>Secure Logistics:</strong> Armored transport, chain-of-custody, customs, insurance.</li>
-              <li><strong>Responsible Offtake:</strong> Accredited refiners, authorized end-users, audit trail.</li>
+              <li><strong data-i18n="core_item1_label">Responsible Sourcing &amp; Verification:</strong> <span data-i18n="core_item1_desc">titles, KYS, on-site checks, assays.</span></li>
+              <li><strong data-i18n="core_item2_label">Due Diligence &amp; Risk Management:</strong> <span data-i18n="core_item2_desc">OECD 5-step, AML/CFT, continuous monitoring.</span></li>
+              <li><strong data-i18n="core_item3_label">Secure Logistics:</strong> <span data-i18n="core_item3_desc">Armored transport, chain-of-custody, customs, insurance.</span></li>
+              <li><strong data-i18n="core_item4_label">Responsible Offtake:</strong> <span data-i18n="core_item4_desc">Accredited refiners, authorized end-users, audit trail.</span></li>
             </ul>
           </article>
         </div>

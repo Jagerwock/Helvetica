@@ -13,15 +13,21 @@
 <body>
 <header class="site-header" data-elevate>
   <div class="container">
-    <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+    <a href="index.html" class="brand">
+      <img src="Images/Helvetica_Logo_H_GD.png" alt="Helvetica Resources logo">
+    </a>
     <nav class="main-nav desktop">
       <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
       <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
       <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
       <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
       <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
-      <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+      <a class="nav-link contact-link" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> <span class="arrow">→</span></a>
     </nav>
+    <div class="lang-switch header-lang">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
     <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -32,37 +38,37 @@
   <a href="team.html" data-i18n="nav_team">Executive Team</a>
   <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
   <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
-  <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+  <a class="btn-cta" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> →</a>
   <div class="lang-switch"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div>
 </nav>
 
 <main>
   <section class="hero" style="min-height:48vh">
-    <div class="hero-media"><img src="Images/about-hero.jpg" alt=""></div>
+    <div class="hero-media"><img src="Images/VenasDeOro.jpg" alt=""></div>
     <div class="container content">
-      <h1>Who we are</h1>
-      <p class="kicker">Independent commodity firm specialized in creating value across the gold supply chain.</p>
+      <h1 data-i18n="about_title">Who we are</h1>
+      <p class="kicker" data-i18n="about_tag">Independent commodity firm specialized in creating value across the gold supply chain.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container grid-2">
       <article class="card">
-        <h3>Our mission</h3>
+        <h3 data-i18n="mission_title">Our mission</h3>
         <ul class="list-tight">
-          <li>Integrated physical trading &amp; mining finance platform connecting mines to global buyers.</li>
-          <li>Focus on responsible investment in artisanal &amp; small-scale mining (ASM).</li>
-          <li>Stable, transparent returns through insured &amp; traceable operations.</li>
-          <li>OECD-aligned compliance, due diligence and development impact.</li>
+          <li data-i18n="mission_item1">Integrated physical trading &amp; mining finance platform connecting mines to global buyers.</li>
+          <li data-i18n="mission_item2">Focus on responsible investment in artisanal &amp; small-scale mining (ASM).</li>
+          <li data-i18n="mission_item3">Stable, transparent returns through insured &amp; traceable operations.</li>
+          <li data-i18n="mission_item4">OECD-aligned compliance, due diligence and development impact.</li>
         </ul>
       </article>
       <article class="card">
-        <h3>Platform pillars</h3>
+        <h3 data-i18n="pillars_title">Platform pillars</h3>
         <ul class="list-tight">
-          <li>Lawful origin verification and documentation</li>
-          <li>Transparency and audit trail across the chain-of-custody</li>
-          <li>AML/CFT controls consistent with international standards</li>
-          <li>Secure export pathways &amp; authorized offtake</li>
+          <li data-i18n="pillar_item1">Lawful origin verification and documentation</li>
+          <li data-i18n="pillar_item2">Transparency and audit trail across the chain-of-custody</li>
+          <li data-i18n="pillar_item3">AML/CFT controls consistent with international standards</li>
+          <li data-i18n="pillar_item4">Secure export pathways &amp; authorized offtake</li>
         </ul>
       </article>
     </div>

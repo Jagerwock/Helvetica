@@ -13,15 +13,21 @@
 <body>
   <header class="site-header" data-elevate>
     <div class="container">
-      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <a href="index.html" class="brand">
+        <img src="Images/Helvetica_Logo_H_GD.png" alt="Helvetica Resources logo">
+      </a>
       <nav class="main-nav desktop">
         <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
         <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
         <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
         <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
         <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
-        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+        <a class="nav-link contact-link" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> <span class="arrow">→</span></a>
       </nav>
+      <div class="lang-switch header-lang">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -34,7 +40,7 @@
     <a href="team.html" data-i18n="nav_team">Executive Team</a>
     <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
     <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
-    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <a class="btn-cta" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> →</a>
     <div class="lang-switch">
       <button type="button" data-lang="en" class="active">EN</button>
       <button type="button" data-lang="es">ES</button>
@@ -45,24 +51,26 @@
     <section class="section">
       <div class="container grid-2">
         <article class="card">
-          <h3>Visit us</h3>
+          <h3 data-i18n="contact_visit">Visit us</h3>
           <address>
-            <strong>Cusco:</strong> Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco<br>
-            <strong>Lima:</strong> Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco
+            <strong data-i18n="contact_cusco_label">Cusco:</strong>
+            <span data-i18n="contact_cusco_addr">Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco</span><br>
+            <strong data-i18n="contact_lima_label">Lima:</strong>
+            <span data-i18n="contact_lima_addr">Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco</span>
           </address>
           <div class="contact-meta mt-sm">
-            <p><strong>Email:</strong> contact@helvetica.com</p>
-            <p><strong>Phone:</strong> +1 (555) 555-5555</p>
+            <p><strong data-i18n="contact_email_label">Email:</strong> <span class="contact-text">contact@helvetica.com</span></p>
+            <p><strong data-i18n="contact_phone_label">Phone:</strong> <span class="contact-text">+51 999 999 999</span></p>
           </div>
         </article>
         <article class="card">
-          <h3>Write to us</h3>
+          <h3 data-i18n="contact_write">Write to us</h3>
           <form class="contact-form" netlify>
-            <label>Name<input type="text" name="name" required></label>
-            <label>Email<input type="email" name="email" required></label>
-            <label>Message<textarea name="message" rows="4" required></textarea></label>
-            <button class="btn-cta" type="submit">Send →</button>
-            <p class="disclaimer">Information subject to verification and due diligence.</p>
+            <label><span data-i18n="contact_form_name">Name</span><input type="text" name="name" required data-i18n-placeholder="contact_form_name"></label>
+            <label><span data-i18n="contact_form_email">Email</span><input type="email" name="email" required data-i18n-placeholder="contact_form_email"></label>
+            <label><span data-i18n="contact_form_message">Message</span><textarea name="message" rows="4" required data-i18n-placeholder="contact_form_message"></textarea></label>
+            <button class="btn-cta" type="submit" data-i18n="contact_form_submit">Send</button>
+            <p class="disclaimer" data-i18n="contact_disclaimer">Information subject to verification and due diligence.</p>
           </form>
         </article>
       </div>

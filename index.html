@@ -14,15 +14,18 @@
 <body>
 <header class="site-header" data-elevate>
   <div class="container">
-    <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+    <a href="index.html" class="brand">
+      <img src="Images/Helvetica_Logo_H_GD.png" alt="Helvetica Resources logo">
+    </a>
     <nav class="main-nav desktop">
       <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
       <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
       <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
       <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
       <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
-      <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+      <a class="nav-link contact-link" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> <span class="arrow">→</span></a>
     </nav>
+    <div class="lang-switch header-lang"><button data-lang="en" class="active">EN</button><button data-lang="es">ES</button></div>
     <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -34,10 +37,10 @@
   <a href="team.html" data-i18n="nav_team">Executive Team</a>
   <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
   <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
-  <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
-  <div class="lang-switch">
-    <button type="button" data-lang="en" class="active">EN</button>
-    <button type="button" data-lang="es">ES</button>
+  <a class="btn-cta" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> →</a>
+  <div class="lang-switch header-lang">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="es">ES</button>
   </div>
 </nav>
 
@@ -47,9 +50,9 @@
       <img src="Images/Peru1.webp" alt="Mining landscape Peru">
     </div>
     <div class="container hero-content">
-      <h1>Transforming mineral supply chains with integrity.</h1>
-      <p>We ensure sustainable supply chains through rigorous due diligence and ethical business practices.</p>
-      <a href="contact.html" class="btn btn-cta">Invest With Us →</a>
+      <h1 data-i18n="hero_title">Transforming mineral supply chains with integrity.</h1>
+      <p data-i18n="hero_tag">We ensure sustainable supply chains through rigorous due diligence and ethical business practices.</p>
+      <a href="contact.html" class="btn btn-cta" data-i18n="hero_cta">Invest With Us</a>
     </div>
   </section>
 

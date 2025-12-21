@@ -13,15 +13,21 @@
 <body>
   <header class="site-header" data-elevate>
     <div class="container">
-      <a href="index.html" class="brand">HELVETICA RESOURCES</a>
+      <a href="index.html" class="brand">
+        <img src="Images/Helvetica_Logo_H_GD.png" alt="Helvetica Resources logo">
+      </a>
       <nav class="main-nav desktop">
         <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
         <a class="nav-link" href="purpose.html" data-i18n="nav_purpose">Our Purpose</a>
         <a class="nav-link" href="team.html" data-i18n="nav_team">Executive Team</a>
         <a class="nav-link" href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
         <a class="nav-link" href="compliance.html" data-i18n="nav_comp">Compliance</a>
-        <a class="nav-link contact-link" href="contact.html" data-i18n="nav_contact">Contact Us <span class="arrow">→</span></a>
+        <a class="nav-link contact-link" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> <span class="arrow">→</span></a>
       </nav>
+      <div class="lang-switch header-lang">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -32,7 +38,7 @@
     <a href="team.html" data-i18n="nav_team">Executive Team</a>
     <a href="sustainability.html" data-i18n="nav_sust">Sustainability</a>
     <a href="compliance.html" data-i18n="nav_comp">Compliance</a>
-    <a class="btn-cta" href="contact.html" data-i18n="nav_contact">Contact Us →</a>
+    <a class="btn-cta" href="contact.html"><span data-i18n="nav_contact">Contact Us</span> →</a>
     <div class="lang-switch">
       <button type="button" data-lang="en" class="active">EN</button>
       <button type="button" data-lang="es">ES</button>
@@ -43,29 +49,29 @@
     <section class="section">
       <div class="container">
         <div class="section-head center">
-          <h2>Sustainability &amp; Responsible Trade</h2>
-          <p class="section-tag">Fostering transparent and integrated supply chains.</p>
+          <h2 data-i18n="sust_title">Sustainability &amp; Responsible Trade</h2>
+          <p class="section-tag" data-i18n="sust_tag">Fostering transparent and integrated supply chains.</p>
         </div>
 
         <div class="grid-2">
           <article class="card">
-            <h3>Responsible Trade</h3>
+            <h3 data-i18n="sust_trade_title">Responsible Trade</h3>
             <ul class="list-tight">
-              <li>OECD Guidelines applied to ASM integration.</li>
-              <li>Risk-based due diligence across sourcing.</li>
-              <li>Promotes formalization, not exclusion.</li>
-              <li>Zero tolerance for forced/child labor and environmental abuse.</li>
-              <li>Local development benefits from responsible trade.</li>
+              <li data-i18n="sust_trade_item1">OECD Guidelines applied to ASM integration.</li>
+              <li data-i18n="sust_trade_item2">Risk-based due diligence across sourcing.</li>
+              <li data-i18n="sust_trade_item3">Promotes formalization, not exclusion.</li>
+              <li data-i18n="sust_trade_item4">Zero tolerance for forced/child labor and environmental abuse.</li>
+              <li data-i18n="sust_trade_item5">Local development benefits from responsible trade.</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Commitments</h3>
+            <h3 data-i18n="sust_commit_title">Commitments</h3>
             <ul class="list-tight">
-              <li><strong>Human Rights:</strong> no child/forced labor; safe work.</li>
-              <li><strong>Environment:</strong> oversight of chemical use; safer methods.</li>
-              <li><strong>ASM Support:</strong> engagement, legal registration, compliance.</li>
-              <li><strong>Governance:</strong> OECD-aligned DD; LBMA conflict-free; AML/CFT.</li>
+              <li><strong data-i18n="sust_commit_item1">Human Rights: no child/forced labor; safe work.</strong></li>
+              <li><strong data-i18n="sust_commit_item2">Environment: oversight of chemical use; safer methods.</strong></li>
+              <li><strong data-i18n="sust_commit_item3">ASM Support: engagement, legal registration, compliance.</strong></li>
+              <li><strong data-i18n="sust_commit_item4">Governance: OECD-aligned DD; LBMA conflict-free; AML/CFT.</strong></li>
             </ul>
           </article>
         </div>
