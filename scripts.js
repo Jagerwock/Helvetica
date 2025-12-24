@@ -18,6 +18,7 @@ const I18N_PLACEHOLDERS = document.querySelectorAll('[data-i18n-placeholder]');
 const LANG_BUTTONS = document.querySelectorAll('[data-lang]');
 const officeImage = document.querySelector('[data-office-image]');
 const officeAddress = document.querySelector('[data-office-address]');
+const footerAddress = document.querySelector('[data-footer-address]');
 const locationButtons = document.querySelectorAll('[data-location]');
 const DICT = {
   en: {
@@ -282,6 +283,9 @@ function renderOfficeLocation(lang = currentLang){
   }
   if (officeAddress){
     officeAddress.textContent = dict[data.addrKey] || '';
+  }
+  if (footerAddress){
+    footerAddress.textContent = dict[data.addrKey] || '';
   }
   locationButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.location === activeOffice));
 }
