@@ -16,6 +16,9 @@ const I18N_KEYS = document.querySelectorAll('[data-i18n]');
 const I18N_HTML = document.querySelectorAll('[data-i18n-html]');
 const I18N_PLACEHOLDERS = document.querySelectorAll('[data-i18n-placeholder]');
 const LANG_BUTTONS = document.querySelectorAll('[data-lang]');
+const officeImage = document.querySelector('[data-office-image]');
+const officeAddress = document.querySelector('[data-office-address]');
+const locationButtons = document.querySelectorAll('[data-location]');
 const DICT = {
   en: {
     nav_about: "About Us",
@@ -25,10 +28,10 @@ const DICT = {
     nav_comp: "Compliance",
     nav_contact: "Contact Us",
     hero_title: "Transforming mineral supply chains with integrity.",
-    hero_tag: "We ensure sustainable supply chains through rigorous due diligence and ethical business practices.",
+    hero_tag: "We secure sustainable supply chains through rigorous due diligence and ethical practice.",
     hero_cta: "Invest With Us",
     tiles_title: "Our Purpose & Mission",
-    tiles_tag: "We work to strengthen responsible mineral supply chains by promoting ethical sourcing, transparent practices, and full compliance with international standards.",
+    tiles_tag: "We strengthen responsible mineral supply chains through ethical sourcing, transparent practices, and full compliance with international standards.",
     tile1_h: "Sourcing",
     tile1_p: "We identify responsible sources of minerals and materials.",
     tile2_h: "Compliance",
@@ -36,7 +39,13 @@ const DICT = {
     tile3_h: "Transparency",
     tile3_p: "We promote transparency in all aspects of mineral trade.",
     offices_title: "Visit our offices",
-    offices_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
+    offices_cusco_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
+    offices_lima_addr: "Av. El Derby 250, 12th Floor, Office 1210, Santiago de Surco, Lima",
+    office_cusco_alt: "Historic Cusco cityscape at dusk",
+    office_lima_alt: "Lima business district skyline",
+    locations_title: "Locations",
+    locations_cusco: "Cusco",
+    locations_lima: "Lima",
     connect_p: "Connect with us",
     connect_h: "Join us in shaping the future",
     connect_btn: "Contact Us",
@@ -102,7 +111,7 @@ const DICT = {
     team_anais_role3: "Certified AML/CFT (SPLAFT) — Compliance Officer, metal trading",
     contact_visit: "Visit us",
     contact_cusco_label: "Cusco:",
-    contact_cusco_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
+    contact_lima_addr: "Av. El Derby 250, 12th Floor, Office 1210, Santiago de Surco, Lima",
     contact_lima_label: "Lima:",
     contact_lima_addr: "Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco",
     contact_email_label: "Email:",
@@ -139,11 +148,11 @@ const DICT = {
     nav_sust: "Sostenibilidad",
     nav_comp: "Cumplimiento",
     nav_contact: "Contáctanos",
-    hero_title: "Transformando cadenas de suministro mineral con integridad.",
-    hero_tag: "Aseguramos cadenas sostenibles mediante debida diligencia rigurosa y prácticas éticas.",
+    hero_title: "Transformamos cadenas minerales con integridad.",
+    hero_tag: "Aseguramos cadenas sostenibles con debida diligencia rigurosa y prácticas éticas.",
     hero_cta: "Invierte con nosotros",
     tiles_title: "Nuestro propósito y misión",
-    tiles_tag: "Fortalecemos cadenas responsables promoviendo abastecimiento ético, prácticas transparentes y cumplimiento total con estándares internacionales.",
+    tiles_tag: "Fortalecemos cadenas responsables con abastecimiento ético, prácticas transparentes y cumplimiento internacional.",
     tile1_h: "Abastecimiento",
     tile1_p: "Identificamos fuentes responsables de minerales y materiales.",
     tile2_h: "Cumplimiento",
@@ -151,7 +160,13 @@ const DICT = {
     tile3_h: "Transparencia",
     tile3_p: "Promovemos la transparencia en todo el comercio mineral.",
     offices_title: "Visita nuestras oficinas",
-    offices_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
+    offices_cusco_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
+    offices_lima_addr: "Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco, Lima",
+    office_cusco_alt: "Vista del centro histórico de Cusco al atardecer",
+    office_lima_alt: "Skyline corporativo de Lima",
+    locations_title: "Nuestras sedes",
+    locations_cusco: "Cusco",
+    locations_lima: "Lima",
     connect_p: "Conecta con nosotros",
     connect_h: "Únete a dar forma al futuro",
     connect_btn: "Contáctanos",
@@ -219,7 +234,7 @@ const DICT = {
     contact_cusco_label: "Cusco:",
     contact_cusco_addr: "Avenida de la Cultura, Urbanización Magisterial, N - 15, Cusco",
     contact_lima_label: "Lima:",
-    contact_lima_addr: "Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco",
+    contact_lima_addr: "Av. El Derby 250, Piso 12, Oficina 1210, Santiago de Surco, Lima",
     contact_email_label: "Correo:",
     contact_phone_label: "Teléfono:",
     contact_write: "Escríbenos",
@@ -249,14 +264,44 @@ const DICT = {
   }
 };
 
+const OFFICE_STATES = {
+  cusco: { image:'Images/Sacsayhuaman.jpg', addrKey:'offices_cusco_addr', altKey:'office_cusco_alt' },
+  lima: { image:'Images/Peru3.webp', addrKey:'offices_lima_addr', altKey:'office_lima_alt' }
+};
+
+let activeOffice = localStorage.getItem('officeLocation') || 'cusco';
+let currentLang = localStorage.getItem('lang') || 'en';
+
+function renderOfficeLocation(lang = currentLang){
+  const dict = DICT[lang] || DICT.en;
+  const data = OFFICE_STATES[activeOffice];
+  if (!data) return;
+  if (officeImage){
+    officeImage.src = data.image;
+    officeImage.alt = dict[data.altKey] || '';
+  }
+  if (officeAddress){
+    officeAddress.textContent = dict[data.addrKey] || '';
+  }
+  locationButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.location === activeOffice));
+}
+
+function setOfficeLocation(location){
+  if (!OFFICE_STATES[location]) return;
+  activeOffice = location;
+  localStorage.setItem('officeLocation', location);
+  renderOfficeLocation();
+}
+
+locationButtons.forEach(btn => btn.addEventListener('click', () => setOfficeLocation(btn.dataset.location)));
+
 function applyLang(lang){
   const dict = DICT[lang] || DICT.en;
+  currentLang = lang;
   I18N_KEYS.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) el.textContent = dict[key];
   });
-  LANG_BUTTONS.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-  localStorage.setItem('lang', lang);
 
   I18N_HTML.forEach(el => {
       const key = el.getAttribute('data-i18n-html');
@@ -269,9 +314,10 @@ function applyLang(lang){
   LANG_BUTTONS.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
   localStorage.setItem('lang', lang);
   document.documentElement.lang = lang;
+  renderOfficeLocation(lang);
 }
 
-applyLang(localStorage.getItem('lang') || 'en');
+applyLang(currentLang);
 
 LANG_BUTTONS.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
